@@ -12,11 +12,11 @@ Global $transparencyLevel = 0
 Run("C:\Program Files (x86)\list-your-program.exe here")
 Sleep(3000)
 
-; Search for and click the connect button
+; Search for and click the img1
 If ImageSearchAndClick($img1) Then
     Sleep(3000)
 
-    ; Search for and click the lock image
+    ; Search for and click the img2
     If ImageSearchAndClick($img2) Then
         Send("some random text")
         Send("{ENTER}")
